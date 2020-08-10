@@ -1,0 +1,35 @@
+{
+  "user": "API Tester",
+  "credentials": {
+    "username": "api_tester",
+    "password": "tapiester"
+  },
+  "graphql_credentials": {
+    "grant_type": "password",
+    "username": "taran.acutt",
+    "password": "AX2QLOu98xW5"
+  },
+  "qafixtures_user1": {
+    "grant_type": "password",
+    "username": "QAFIXTURES_USER1",
+    "password": "QAFIXTURES_USER1"
+  },
+  "qafixtures_user2": {
+    "grant_type": "password",
+    "username": "QAFIXTURES_USER2",
+    "password": "QAFIXTURES_USER2"
+  },
+  "hosts": {
+    "backend": "https://api.kappa.blackswan.com/live/",
+    "auth": "https://data.blackswan.com/api/auth/",
+    "accounts": "https://data.blackswan.com/api/accounts/",
+    "brain": "https://data.blackswan.com/api/brain/",
+    "data": "https://data.blackswan.com/api/data/",
+    "datasource_admin": "https://data.blackswan.com/api/datasource-admin/",
+    "positioning_machine": "https://data.blackswan.com/api/positioning-machine/",
+    "graph": "https://graph.facebook.com/v2.8/",
+    "graphql": "https://blue.trendscope.blackswan.com/api/"
+  }
+}
+
+

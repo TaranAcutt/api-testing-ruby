@@ -1,0 +1,43 @@
+{
+  "credentials": {
+    "middleware": {
+      "user": "API Tester",
+      "username": "api_tester",
+      "password": "tapiester"
+    },
+    "trendscopeUser": {
+      "username": "api_tester",
+      "password": "tapiester"
+    },
+    "invalidUser": {
+      "username": "INVALID",
+      "password": "INVALID"
+    },
+    "fixturesUser1": {
+      "username": "QAFIXTURES_USER1",
+      "password": "QAFIXTURES_USER1"
+    },
+    "fixturesUser2": {
+      "username": "QAFIXTURES_USER2",
+      "password": "QAFIXTURES_USER2"
+    },
+    "taxonomyUser": {
+      "username": "taxonomy_test_user",
+      "password": "taxonomy"
+    }
+  },
+  "loginPaths": {
+    "middleware": "auth/login",
+    "trendscope": "auth/realms/Nest/protocol/openid-connect/token"
+  },
+  "hosts": {
+    "backend": "https://api.kappa.blackswan.com/live/",
+    "middleware": "https://data.blackswan.com/api/",
+    "auth": "https://sso.blackswan.com/",
+    "trendscope": "https://trendscope.blackswan.com/api/",
+    "taxonomy_mgm": "https://taxonomy-mgm.blackswan.com/api/"
+  }
+}
+
+
+

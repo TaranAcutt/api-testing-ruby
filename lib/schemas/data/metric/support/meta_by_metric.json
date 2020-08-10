@@ -1,0 +1,143 @@
+{
+  "type": "object",
+  "required": [
+    "name",
+    "type",
+    "description",
+    "compatible_dimensions",
+    "display_name",
+    "data_type"
+  ],
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "METRIC"
+      ]
+    },
+    "description": {
+      "type": "string"
+    },
+    "default_aggregation": {
+      "type": "string",
+      "enum": [
+        "SUM",
+        "AVG",
+        "LAST",
+        "FIRST",
+        "MIN",
+        "MAX"
+      ]
+    },
+    "compatible_dimensions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "ID",
+          "DATE",
+          "DAY",
+          "WEEK",
+          "MONTH",
+          "YEAR",
+          "BRAND_GROUP",
+          "MONITOR_ID",
+          "MONITOR_NAME",
+          "AGES",
+          "CHANNEL_ID",
+          "GENDERS",
+          "COUNTRIES",
+          "CONTINENTS",
+          "CHANNEL_GROUPING",
+          "KEYWORD",
+          "DEVICE",
+          "SUB_LEV_1_CODE",
+          "REASON",
+          "COUNTRY",
+          "METRIC",
+          "CAMPAIGN",
+          "TYPE",
+          "CATEGORY",
+          "VALUE",
+          "BRAND",
+          "KEY",
+          "CTR",
+          "CLICKS",
+          "IMPRESSIONS",
+          "POSITION",
+          "PAGE_ID",
+          "VIEW_PROFILE_ID",
+          "POSTID",
+          "MESSAGE",
+          "EXTERNALURL",
+          "METADATA.TOTAL_POST_IMPRESIONS_ORGANIC_UNIQUE",
+          "METADATA.POST_LIKES",
+          "METADATA.TOTAL_ENGAGEMENT",
+          "METADATA.POST_COMMENTS",
+          "METADATA.ENGAGEMENT_RATE",
+          "METADATA.TOTAL_REACH",
+          "METADATA.FIRST_TOTAL_POST_ENGAGEMENT",
+          "METADATA.POST_SHARES",
+          "MEDIAURL",
+          "PROFILEIMAGE",
+          "SOURCE",
+          "IMAGE",
+          "VIDEO_ID",
+          "METADATA.VIEWS",
+          "METADATA.SHARES",
+          "METADATA.DISLIKES",
+          "METADATA.LIKES",
+          "METADATA.ESTIMATED_MINUTES_WATCHED",
+          "METADATA.TOTAL_CONSUMPTION",
+          "METADATA.TOTAL_POST_IMPRESSIONS_PAID_UNIQUE",
+          "METADATA.TOTAL_POST_ENGAGEMENT",
+          "METADATA.POST_ENGAGEMENT_RATE",
+          "METADATA.TOTAL_POST_IMPRESSIONS",
+          "METADATA.TOTAL_VIDEO_TIME",
+          "METADATA.FAVOURITES",
+          "METADATA.RETWEETS",
+          "MEDIATYPE",
+          "METADATA.FAVOURITES",
+          "METADATA.RETWEETS",
+          "METADATA.TOTAL_POST_IMPRESSIONS_PAID",
+          "DESCRIPTION",
+          "POSTS",
+          "FOLLOWERS",
+          "SCREENNAME",
+          "PROFILE_URL",
+          "AVATARURL",
+          "NAME",
+          "VOLUME",
+          "SENTIMENT",
+          "COUNT",
+          "MENTION",
+          "INFLUENCER.ID",
+          "INFLUENCER.USERNAME",
+          "INFLUENCER.PROPERTIES",
+          "HASHTAG",
+          "INFLUENCER.PROPERTIES",
+          "INFLUENCER.ID",
+          "INFLUENCER.USERNAME"
+        ]
+      }
+    },
+    "display_name": {
+      "type": "string"
+    },
+    "data_type": {
+      "type": "object",
+      "required": [
+        "type"
+      ],
+      "properties": {
+        "type": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
+

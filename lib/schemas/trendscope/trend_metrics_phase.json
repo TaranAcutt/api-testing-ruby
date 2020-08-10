@@ -1,0 +1,12 @@
+{
+  "type": "string",
+  "enum": [
+    "Growing",
+    "Mature",
+    "Declining",
+    "Emerging",
+    "Dormant",
+    "Fading"
+  ]
+}
+

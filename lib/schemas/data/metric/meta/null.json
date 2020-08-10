@@ -1,0 +1,6 @@
+{
+  "type": {
+    "type": "string",
+    "enum": "NULL"
+  }
+}

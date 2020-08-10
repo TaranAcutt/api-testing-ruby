@@ -1,0 +1,40 @@
+{
+  "core": {
+    "type": "object",
+    "items": {
+      "required": [
+        "allowance",
+        "remaining",
+        "seconds_to_reset",
+        "concurrent_allowance",
+        "concurrent",
+        "limit",
+        "reset"
+      ],
+      "properties": {
+        "allowance": {
+          "type": "integer"
+        },
+        "remaining": {
+          "type": "integer"
+        },
+        "seconds_to_reset": {
+          "type": "integer"
+        },
+        "concurrent_allowance": {
+          "type": "string"
+        },
+        "concurrent": {
+          "type": "integer"
+        },
+        "limit": {
+          "type": "integer"
+        },
+        "reset": {
+          "type": "integer"
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,23 @@
+{
+  "type": "object",
+  "required": [
+    "username",
+    "name",
+    "email"
+  ],
+  "properties": {
+    "username": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string",
+      "format": "email"
+    },
+    "billing_client": {
+      "type": "string"
+    }
+  }
+}

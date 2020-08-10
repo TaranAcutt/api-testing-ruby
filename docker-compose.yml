@@ -1,0 +1,18 @@
+version: '3'
+services:
+    test:
+        image: ruby:2.6.5
+        network_mode: "host"
+        volumes:
+            - './.rspec:/usr/src/app/.rspec:ro'
+            - './Gemfile:/usr/src/app/Gemfile:ro'
+            - './Gemfile.lock:/usr/src/app/Gemfile.lock:ro'
+            - './.bundle:/usr/src/app/.bundle:ro'
+            - './lib:/usr/src/app/lib:ro'
+            - './spec:/usr/src/app/spec:ro'
+            - './vendor:/usr/src/app/vendor:rw'
+            - './reports:/var/reports:rw'
+        working_dir: '/usr/src/app'
+        env_file:
+            - ./env.env
+        command: bash -c "bundle install && bundle exec rspec $$SPEC -f RspecJunitFormatter -o /var/reports/out.xml"

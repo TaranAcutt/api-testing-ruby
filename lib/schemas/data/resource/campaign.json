@@ -1,0 +1,25 @@
+{
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "client"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "client": {
+      "type": "string"
+    },
+    "start_date": {
+      "$ref": "../../support/date_regexp.json#/definitions/date_regexp"
+    },
+    "end_date": {
+      "$ref": "../../support/date_regexp.json#/definitions/date_regexp"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "user": "Taran Acutt",
+  "credentials": {
+    "username": "taran",
+    "password": "hairymanballs"
+  },
+  "hosts": {
+    "backend": "https://api.discovery.disney.com/live/",
+    "auth": "https://api.discovery.disney.com/api/auth/",
+    "accounts": "https://api.discovery.disney.com/api/accounts/",
+    "brain": "https://api.discovery.disney.com/api/brain/",
+    "data": "https://api.discovery.disney.com/api/data/",
+    "datasource_admin": "https://api.discovery.disney.com/api/datasource-admin/",
+    "positioning_machine": "https://api.discovery.disney.com/api/positioning-machine/"
+  }
+}

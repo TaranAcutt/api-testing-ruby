@@ -1,0 +1,14 @@
+{
+  "type": "string",
+  "enum": [
+    "PENDING",
+    "ACTIVE",
+    "CANCELED",
+    "FAILED",
+    "COMPLETE",
+    "SKIPPED"
+  ]
+}
+
+
+

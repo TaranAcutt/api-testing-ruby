@@ -1,0 +1,18 @@
+{
+  "user": "API Tester",
+  "credentials": {
+    "username": "api_tester",
+    "password": "tapiester"
+  },
+  "hosts": {
+    "backend": "https://api-b.kappa.blackswan.com/live/",
+    "auth": "https://api.b.kappa.blackswan.com/api/auth/",
+    "accounts": "https://api.b.kappa.blackswan.com/api/accounts/",
+    "brain": "https://api.b.kappa.blackswan.com/api/brain/",
+    "data": "https://api.b.kappa.blackswan.com/api/data/",
+    "datasource_admin": "https://api.b.kappa.blackswan.com/api/datasource-admin/",
+    "positioning_machine": "https://api.b.kappa.blackswan.com/api/positioning-machine/",
+    "graph": "https://graph.facebook.com/v2.8/"
+  }
+}
+

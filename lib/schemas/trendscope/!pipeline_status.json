@@ -1,0 +1,14 @@
+{
+  "type": "string",
+  "enum": [
+    "NEW",
+    "ACTIVE",
+    "CANCELED",
+    "FAILED",
+    "COMPLETE",
+    "DRAFT"
+  ]
+}
+
+
+

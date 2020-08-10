@@ -1,0 +1,7 @@
+{
+  "type": {
+    "type": "string",
+    "enum": "NUMBER"
+  }
+}
+

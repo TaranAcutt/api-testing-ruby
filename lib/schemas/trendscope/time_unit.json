@@ -1,0 +1,13 @@
+{
+  "time_unit": {
+    "type": "string",
+    "enum": [
+      "MINUTE",
+      "HOUR",
+      "DAY",
+      "WEEK",
+      "MONTH",
+      "YEAR"
+    ]
+  }
+}

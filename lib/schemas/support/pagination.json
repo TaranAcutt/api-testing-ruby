@@ -1,0 +1,26 @@
+{
+  "definitions": {
+    "pagination": {
+      "type": "object",
+      "properties": {
+        "page": {
+          "type": "number",
+          "min": 1
+        },
+        "pages": {
+          "type": "number",
+          "min": 0
+        },
+        "page_size": {
+          "type": "number",
+          "min": 1
+        },
+        "total_items": {
+          "type": "number",
+          "min": 0
+        }
+      }
+    }
+  }
+}
+

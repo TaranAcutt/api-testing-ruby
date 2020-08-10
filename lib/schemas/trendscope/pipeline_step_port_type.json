@@ -1,0 +1,14 @@
+{
+  "oneOf": [
+    {
+      "type": "null"
+    },
+    {
+      "type": "string",
+      "enum": [
+        "IO",
+        "NOOP"
+      ]
+    }
+  ]
+}

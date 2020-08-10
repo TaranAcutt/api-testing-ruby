@@ -1,0 +1,24 @@
+{
+  "type": "object",
+  "required": [
+    "type",
+    "name",
+    "displayName",
+    "dataType"
+  ],
+  "properties": {
+    "type": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "dataType": {
+      "type": "object"
+    }
+  }
+}
+

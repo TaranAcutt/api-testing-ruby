@@ -1,0 +1,78 @@
+{
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "client",
+    "campaign",
+    "properties",
+    "data_source"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "client": {
+      "type": "string"
+    },
+    "campaign": {
+      "type": "string"
+    },
+    "properties": {
+      "type": "object"
+    },
+    "data_source": {
+      "type": "string",
+      "enum": [
+        "STOCK",
+        "CURRENCY_PAIR",
+        "SUPERMARKET",
+        "WEATHER",
+        "CSV",
+        "ALEXA",
+        "FACEBOOK",
+        "FACEBOOK_ADS",
+        "NIELSEN",
+        "KLOUT",
+        "GOOGLE_ANALYTICS",
+        "OMNITURE",
+        "DFA",
+        "MARS_SALES",
+        "IMDB",
+        "SIZMEK",
+        "TWITTER",
+        "YOUTUBE",
+        "SOCIALNAUT",
+        "GOOGLE_TRENDS",
+        "POST",
+        "STAT",
+        "GDELT",
+        "GOOGLE_ANALYTICS_DELETED",
+        "DEMOGRAPHICS",
+        "FACEBOOK_META",
+        "TWITTER_META",
+        "FOREX",
+        "CAMPAIGN_METRICS",
+        "APPLICATION_USAGE",
+        "REST",
+        "DATA_LIBRARY",
+        "DISNEY_SALES",
+        "INVESTMENT",
+        "GOOGLE_WEBMASTERS",
+        "ADVANCED_WEB_RANKING",
+        "SIMILARWEB",
+        "SFTP",
+        "METRIC",
+        "ADFORMS",
+        "YOUTUBE_VIDEO",
+        "VAISALA",
+        "INRIX",
+        "IMCITY",
+        "DISNEY_SALES"
+      ]
+    }
+  }
+}

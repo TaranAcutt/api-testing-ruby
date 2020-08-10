@@ -1,0 +1,77 @@
+{
+  "type": "object",
+  "required": [
+    "results",
+    "frequency",
+    "monitor_id",
+    "type",
+    "campaign",
+    "brand_group",
+    "client_id",
+    "internal_key",
+    "start_date",
+    "end_date",
+    "enrichments",
+    "dimensions",
+    "properties",
+    "periods"
+  ],
+  "properties": {
+    "results": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "date",
+          "value"
+        ],
+        "properties": {
+          "date": {
+            "$ref": "../../support/date_regexp.json#/definitions/date_regexp"
+          },
+          "value": {
+            "type": "integer"
+          }
+        }
+      }
+    },
+    "frequency": {
+      "type": "string",
+      "enum": [
+        "DAY",
+        "HOUR",
+        "MINUTE"
+      ]
+    },
+    "periods": {
+      "type": "integer"
+    },
+    "dimensions": {
+      "type": "object"
+    },
+    "type": {
+      "type": "string"
+    },
+    "brand_group": {
+      "type": "string"
+    },
+    "monitor_id": {
+      "type": "string"
+    },
+    "internal_key": {
+      "type": "string"
+    },
+    "client_id": {
+      "type": "string"
+    },
+    "campaign": {
+      "type": "string"
+    },
+    "start_date": {
+      "$ref": "../../support/date_regexp.json#/definitions/date_regexp"
+    },
+    "end_date": {
+      "$ref": "../../support/date_regexp.json#/definitions/date_regexp"
+    }
+  }
+}

@@ -1,0 +1,366 @@
+{
+  "type": "object",
+  "required": [
+    "id",
+    "uuid",
+    "author",
+    "content",
+    "properties",
+    "location",
+    "created_at"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "uuid": {
+      "type": "string"
+    },
+    "author": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "username": {
+          "type": "string"
+        },
+        "properties": {
+          "type": "object",
+          "properties": {
+            "image": {
+              "type": "string"
+            },
+            "link": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "language": {
+              "type": "string"
+            },
+            "followers": {
+              "type": "integer"
+            },
+            "friends": {
+              "type": "integer"
+            },
+            "status_count": {
+              "type": "integer"
+            },
+            "verified": {
+              "type": "boolean"
+            },
+            "description": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "required": [
+        "properties"
+      ]
+    },
+    "content": {
+      "type": "object",
+      "properties": {
+        "body": {
+          "type": "string"
+        },
+        "text": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "body"
+      ]
+    },
+    "properties": {
+      "type": "object",
+      "properties": {
+        "sentiment": {
+          "type": "fixnum",
+          "enum": [
+            -1,
+            0,
+            1
+          ]
+        },
+        "detected_languages": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "clients": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "streams": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "link": {
+          "type": "string"
+        },
+        "language": {
+          "type": "string"
+        },
+        "platform": {
+          "type": "string"
+        },
+        "campaigns": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "verb": {
+          "type": "string"
+        },
+        "language_guess": {
+          "type": "string"
+        },
+        "brand_groups": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "monitors": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "clients",
+        "link",
+        "platform",
+        "campaigns",
+        "language_guess",
+        "monitors"
+      ]
+    },
+    "entities": {
+      "type": "object",
+      "properties": {
+        "urls": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "url": {
+                "type": "string"
+              },
+              "display_url": {
+                "type": "string"
+              },
+              "expanded_url": {
+                "type": "string"
+              },
+              "domain": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "url",
+              "expanded_url"
+            ]
+          }
+        },
+        "media": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "url": {
+                "type": "string"
+              },
+              "display_url": {
+                "type": "string"
+              },
+              "expanded_url": {
+                "type": "string"
+              },
+              "media_url": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "url"
+            ]
+          }
+        },
+        "ngrams": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "count": {
+                "type": "integer"
+              },
+              "ngram": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "n": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "count",
+              "ngram",
+              "n"
+            ]
+          }
+        },
+        "categories": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "category": {
+                "type": "string"
+              },
+              "path": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "category": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            },
+            "required": [
+              "category",
+              "path"
+            ]
+          }
+        },
+        "keywords": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "keyword": {
+                "type": "string"
+              },
+              "score": {
+                "type": "fixnum"
+              }
+            },
+            "required": [
+              "keyword",
+              "score"
+            ]
+          }
+        },
+        "matched_keywords": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "keywords": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "keywords"
+            ]
+          }
+        },
+        "hashtags": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "text": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "text"
+            ]
+          }
+        },
+        "mentions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "username": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "username"
+            ]
+          }
+        }
+      }
+    },
+    "location": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "country": {
+          "type": "string"
+        },
+        "continent": {
+          "type": "string"
+        },
+        "region": {
+          "type": "string"
+        },
+        "geometry": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string"
+            },
+            "coordinates": {
+              "type": "array"
+            }
+          }
+        },
+        "time_zone": {
+          "type": "string"
+        },
+        "country_guess": {
+          "type": "string"
+        },
+        "continent_guess": {
+          "type": "string"
+        },
+        "country_source": {
+          "type": "string",
+          "enum": [
+            "GEO",
+            "GUESS",
+            "SOURCE"
+          ]
+        }
+      }
+    },
+    "created_at": {
+      "$ref": "../../support/date_regexp.json#/definitions/date_regexp"
+    }
+  }
+}

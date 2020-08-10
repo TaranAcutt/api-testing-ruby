@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "required": [
+    "id",
+    "name"
+  ],
+  "properties": {
+    "username": {
+      "type": "string"
+    },
+    "email_logo": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "website": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string",
+      "format": "email"
+    },
+    "parent_client": {
+      "type": "string"
+    }
+  }
+}
+

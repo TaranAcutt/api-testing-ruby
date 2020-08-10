@@ -1,0 +1,26 @@
+{
+  "schema": {
+    "request": {
+      "url": "https://dev-trendscope.bsapps.net/api/graphql/introspection",
+      "method": "POST",
+      "postIntrospectionQuery": true,
+      "options": {
+        "headers": {
+          "user-agent": "JS GraphQL"
+        }
+      }
+    }
+  },
+
+  "endpoints": [
+    {
+      "name": "local trendscope api",
+      "url": "https://dev-trendscope.bsapps.net/api/graphql/introspection",
+      "options": {
+        "headers": {
+          "user-agent": "JS GraphQL"
+        }
+      }
+    }
+  ]
+}

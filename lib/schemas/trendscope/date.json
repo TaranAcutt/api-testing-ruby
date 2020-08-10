@@ -1,0 +1,10 @@
+{
+  "oneOf": [
+    {
+      "type": "null"
+    },
+    {
+      "$ref": "../support/date_regexp.json#/definitions/date_regexp"
+    }
+  ]
+}

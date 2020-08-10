@@ -1,0 +1,74 @@
+{
+  "credentials": {
+    "middleware": {
+      "user": "API Tester",
+      "username": "api_tester",
+      "password": "tapiester"
+    },
+    "trendscopeUser": {
+      "username": "api_tester",
+      "password": "tapiester"
+    },
+    "organisationPreferencesAdmin": {
+      "username": "taran.acutt",
+      "password": "mikeisawesome"
+    },
+    "invalidUser": {
+      "username": "INVALID",
+      "password": "INVALID"
+    },
+    "fixturesUser1": {
+      "username": "QAFIXTURES_USER1",
+      "password": "QAFIXTURES_USER1"
+    },
+    "fixturesUser2": {
+      "username": "QAFIXTURES_USER2",
+      "password": "QAFIXTURES_USER2"
+    },
+    "taxonomyUser": {
+      "username": "taxonomy_test_user",
+      "password": "taxonomy"
+    },
+    "ontologyNoPermissions": {
+      "username": "om_no_permissions",
+      "password": "om_no_permissions"
+    },
+    "ontologyUserPermissions": {
+      "username": "qa.tm.user",
+      "password": "qa$tm$password"
+    },
+    "ontologyProjectUserPermissions": {
+      "username": "qa.tm.project.user",
+      "password": "qa$tm$password"
+    },
+    "ontologyProjectAdminPermissions": {
+      "username": "qa.tm.project.admin",
+      "password": "qa$tm$password"
+    },
+    "ontologyAdminPermissions": {
+      "username": "qa.tm.admin",
+      "password": "qa$tm$password"
+    },
+    "ontologyProjectApproverPermissions": {
+      "username": "qa.tm.project.approver",
+      "password": "qa$tm$password"
+    },
+    "ontologyApproverPermissions": {
+      "username": "qa.tm.approver",
+      "password": "qa$tm$password"
+    }
+  },
+  "loginPaths": {
+    "middleware": "auth/login",
+    "trendscope": "auth/realms/Nest/protocol/openid-connect/token"
+  },
+  "hosts": {
+    "backend": "https://stageapi.bsapps.net/stage/",
+    "middleware": "https://stage-data.bsapps.net/api/",
+    "brain21": "http://BRAIN21.stage.bs.lan/",
+    "auth": "https://sso-test-eng.blackswan.com/",
+    "ontology": "https://trendscope-stage.bsapps.net/api/ontology/",
+    "trendscope": "https://stage-trendscope.bsapps.net/api/",
+    "taxonomy_mgm": "https://trendscope-stage.bsapps.net/api/"
+  }
+}

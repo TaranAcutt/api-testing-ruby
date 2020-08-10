@@ -1,0 +1,10 @@
+{
+  "type": {
+    "type": "string",
+    "enum": "DATE"
+  },
+  "format": {
+    "type": "string",
+    "enum": "yyyy-MM-dd"
+  }
+}

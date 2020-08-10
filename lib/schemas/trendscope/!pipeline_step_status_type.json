@@ -1,0 +1,16 @@
+{
+  "oneOf": [
+    {
+      "type": "string",
+      "enum": [
+        "ACTIVE",
+        "NO_OP"
+      ]
+    },
+    {
+      "type": "null"
+    }
+  ]
+}
+
+

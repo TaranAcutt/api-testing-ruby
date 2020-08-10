@@ -1,0 +1,21 @@
+{
+  "type": "array",
+  "items": {
+    "type": "string",
+    "enum": [
+      "SOCIALNAUT",
+      "WEATHER",
+      "TWITTER",
+      "FACEBOOK",
+      "YOUTUBE",
+      "GOOGLE_ANALYTICS",
+      "ALEXA",
+      "SFTP",
+      "INSTAGRAM",
+      "OMNITURE",
+      "SIMILARWEB",
+      "GOOGLE_WEBMASTERS"
+    ]
+  }
+}
+

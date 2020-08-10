@@ -1,0 +1,14 @@
+{
+  "type": "string",
+  "enum": [
+    "s3",
+    "local",
+    "mongo",
+    "hdfs",
+    "table",
+    "stocator"
+  ]
+}
+
+
+

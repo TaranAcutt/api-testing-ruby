@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "required": [
+    "name",
+    "token",
+    "expiryDateTime"
+  ],
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "token": {
+      "type": "string"
+    },
+    "expiryDateTime": {
+      "$ref": "../support/date_regexp.json#/definitions/date_regexp"
+    }
+  }
+}

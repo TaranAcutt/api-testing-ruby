@@ -1,0 +1,26 @@
+{
+  "user": "API Tester",
+  "credentials": {
+    "username": "api_tester",
+    "password": "tapiester"
+  },
+  "graphql_credentials": {
+    "username": "readonly",
+    "password": "readonly"
+  },
+  "hosts": {
+    "backend": "http://devapi.bsapps.net/dev/",
+    "auth": "https://dev-data.bsapps.net/api/auth/",
+    "accounts": "http://localhost:3018/",
+    "brain": "https://dev-data.bsapps.net/api/brain/",
+    "data": "https://dev-data.bsapps.net/api/data/",
+    "datasource_admin": "https://dev-data.bsapps.net/api/datasource-admin/",
+    "positioning_machine": "https://dev-data.bsapps.net/api/positioning-machine/",
+    "trendscope": "http://localhost:8080/",
+    "graphql": "http://localhost:8080/",
+    "graphql_auth": "http://localhost:3025/",
+    "graph": "https://graph.facebook.com/v2.8/"
+  }
+}
+
+
